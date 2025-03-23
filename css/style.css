@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
-body{
+body {
     background-color: #E8D9BF;
 }
-.header__inner{
+
+.header__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,20 +13,258 @@ body{
     padding-left: 2.512%;
     position: absolute;
     width: 100%;
+    z-index: 2;
 }
 
-.header__nav-sp{
-    display: none;
-}
-.hamburger{
+.header__nav-sp {
     display: none;
 }
 
-@media screen and (max-width:1000px){
-    .header__nav{
+.hamburger {
+    display: none;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 60px;
+}
+
+.header__nav ul li {
+    color: #fff;
+    font-size: 15px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    width: 205px;
+}
+
+.main {
+    text-align: center;
+    padding: 100px 0px 90px;
+}
+
+h2 {
+    font-size: 82px;
+    margin: 60px 0 40px 0;
+    font-weight: lighter;
+}
+
+.sp_br {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about {
+    padding-bottom: 100px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.about h3 {
+    text-align: left;
+}
+
+h3 img {
+    height: 77px;
+    width: auto;
+    padding: 0 0 40px 0;
+}
+
+.about_subttl {
+    padding: 55px 0 40px;
+    line-height: calc(61/44);
+}
+
+.main p {
+    line-height: calc(38/23);
+    font-size: 23px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.text {
+    font-size: 23px;
+}
+
+.about-sp {
+    display: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .image {
+    width: 50%;
+    border-bottom-right-radius: 82px;
+}
+
+.content .about_subttl {
+    font-size: 44px;
+}
+
+.about .content {
+    padding-left: 85px;
+
+}
+
+.content h3 {
+    margin: 0;
+}
+
+.content .text {
+    font-size: 16px;
+    line-height: calc(26/16);
+}
+
+.menu {
+    padding-bottom: 90px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.menu li {
+    width: 30%;
+}
+
+h4 {
+    font-size: 38px;
+    font-weight: lighter;
+    color: #D30202;
+    margin: 0;
+    padding: 0 0 23px 10px;
+    margin-top: -15px;
+}
+
+.menu picture img {
+    border-top-right-radius: 41px;
+}
+
+.menu p {
+    font-size: 17px;
+    line-height: calc(25/17);
+    float: left;
+    word-break: break-all;
+}
+
+.gallery {
+    padding-bottom: 70px;
+}
+
+.gallery ul {
+    display: flex;
+    justify-content: center;
+}
+
+.event .pc {
+    padding: 20px 0;
+    border: 4px solid #4F260B;
+    background-color: #fff;
+}
+
+.event li {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 23px;
+    gap: 45px;
+    margin: 20px;
+}
+
+.event_list {
+    padding: 0;
+}
+
+.event a {
+    text-decoration: underline;
+}
+
+.event {
+    padding-bottom: 70px;
+}
+
+iframe {
+    height: 471px;
+    width: 100%;
+    filter: grayscale(100%) invert(92%) contrast(83%);
+}
+
+.access {
+    padding-bottom: 0;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 80px;
+}
+
+.logo-footer .logo {
+    width: 227px;
+    height: 50px;
+}
+
+.logo-footer p {
+    text-align: left;
+    font-size: 20px;
+    line-height: calc(39/20);
+    color: black;
+}
+
+footer {
+    background-color: #fff;
+}
+
+footer p {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 80px;
+}
+
+
+.totop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 125px;
+}
+
+@media screen and (max-width:1100px) {
+    h2 {
+        font-size: 70px;
+    }
+
+    .content .about_subttl {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .header__nav {
         display: none;
     }
-    .hamburger{
+
+    .hamburger {
         display: block;
         width: 30px;
         height: 30px;
@@ -35,7 +274,8 @@ body{
         cursor: pointer;
         z-index: 9999;
     }
-    .hamburger span{
+
+    .hamburger span {
         width: 30px;
         height: 2px;
         background-color: #fff;
@@ -43,7 +283,8 @@ body{
         top: 15px;
         margin: 0;
     }
-    .hamburger span::before{
+
+    .hamburger span::before {
         width: 30px;
         height: 2px;
         background-color: #fff;
@@ -52,7 +293,8 @@ body{
         top: -12px;
         transition: .3s;
     }
-    .hamburger span::after{
+
+    .hamburger span::after {
         width: 30px;
         height: 2px;
         background-color: #fff;
@@ -61,24 +303,29 @@ body{
         bottom: -12px;
         transition: .3s;
     }
-    .open span{
+
+    .open span {
         background-color: transparent;
     }
-    .open span::before{
+
+    .open span::before {
         transform: rotate(45deg);
         top: 0;
     }
-    .open span::after{
+
+    .open span::after {
         transform: rotate(-45deg);
         bottom: 0;
     }
-    .header__nav-sp{
+
+    .header__nav-sp {
         position: absolute;
         width: 100%;
         height: 100vh;
         background-color: #00000b23;
     }
-    .header__nav-sp ul{
+
+    .header__nav-sp ul {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -86,188 +333,153 @@ body{
         justify-content: center;
         gap: 10px;
     }
-    .header__nav-sp li{
+
+    .header__nav-sp li {
         color: #fff;
         font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;;
+            "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+        ;
         font-weight: bold;
     }
+
+
 }
 
-.header__nav ul{
-    display: flex;
-    gap: 60px;
+@media screen and (max-width:767px) {
+    .main {
+        padding: 45px 0;
+    }
+
+    .main .title {
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 38px;
+        line-height: calc(44/38);
+        margin: 30px 0 25px 0;
+    }
+
+    .main .text {
+        font-size: 16px;
+        line-height: calc(30/16);
+    }
+
+    .sp_br {
+        display: block;
+    }
+
+    h3 img {
+        height: 45px;
+        width: auto;
+        padding: 15px 0;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .about-sp {
+        display: flex;
+        padding-bottom: 50px;
+    }
+
+    .about-sp .about_subttl {
+        font-size: 36px;
+        line-height: calc(45/36);
+        padding: 30px 0;
+    }
+
+    .about-sp .text {
+        font-size: 16px;
+        line-height: calc(28/16);
+    }
+
+    .about-sp .content {
+        padding-left: 0;
+    }
+
+    .about-sp p {
+        margin: 0 20px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+        margin: 0 35px;
+
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu h4 {
+        font-size: 40px;
+        padding: 0 0 30px 10px;
+    }
+
+    .menu p {
+        font-size: 17px;
+        line-height: calc(27/17);
+        width: 100%;
+    }
+
+    .event li {
+        display: block;
+        font-size: 16px;
+    }
+
+    .event {
+        padding: 0 20px;
+    }
+
+    .event_text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    iframe {
+        height: 191px;
+        width: 100%;
+    }
+
+    .logo-footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        padding-top: 45px;
+        gap: 30px;
+    }
+
+    .logo-footer p {
+        font-size: 18px;
+        line-height: calc(31/18);
+        padding-bottom: 45px;
+    }
+
+    footer p {
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+    .totop {
+        width: 100px;
+    }
+
 }
 
-.header__nav ul li{
+.slick-dots {
+    bottom: 0;
+}
+
+.slick-dots li.slick-active button:before {
     color: #fff;
-    font-size: 15px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    font-weight: bold;
 }
 
-.logo{
-    width: 205px;
-}
-
-section{
-    padding-bottom: 75px;
-}
-.main{
-    text-align: center;
-    padding: 100px 0px;
-}
-
-h2{
-    font-size: 82px;
-    margin: 60px 0 40px 0;
-    font-weight: lighter;
-}
-h3{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.about h3{
-    text-align: left;
-}
-h3 img{
-    height: 77px;
-    width: auto;
-}
-.about_subttl{
-    padding: 55px 0 40px;
-    line-height: calc(61/44);
-}
-
-.wrapper{
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.main p{
-    line-height: calc(38/23);
-    font-size: 23px;
-}
-.title{
-    font-size: 30px;
-}
-.text{
-    font-size: 23px;
-}
-
-.about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-.about .image{
-    width: 50%;
-    border-bottom-right-radius: 82px;
-}
-.content .about_subttl{
-    font-size: 44px;
-}
-.about .content{
-    padding-left: 85px;
-
-}
-.content h3{
-    margin: 0;
-}
-.content .text{
-    font-size: 16px;
-    line-height: calc(26/16);
-}
-
-.menu ul{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.menu li{
-    width: 30%;
-}
-h4{
-    font-size: 38px;
-    font-weight: lighter;
-    color: #D30202;
-    margin: 0;
-    padding: 0 0 23px 10px;
-    margin-top: -15px;
-}
-.menu li img{
-    border-top-right-radius: 41px;
-}
-.menu p{
-    font-size: 17px;
-    line-height: calc(25/17);
-    width: 300px;
-    float: left;
-    word-break: break-all;
-}
-
-
-.gallery ul{
-    display: flex;
-    justify-content: center;
-}
-
-.event div{
-    padding: 10px;
-    border: 4px solid #4F260B;
-    background-color: #fff;
-}
-.event ul{
-    max-width: 680px;
-    margin: 0 auto;
-}
-.event li{
-    display: flex;
-    font-size: 23px;
-    gap: 23px;
-}
-.event a{
-    text-decoration: underline;
-}
-
-iframe{
-    height: 471px;
-    width: 100%;
-    filter: grayscale(100%) invert(92%) contrast(83%);
-}
-
-.logo-footer{
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    padding-top: 80px;
-}
-
-.logo-footer .logo{
-    width: 227px;
-    height: 50px;
-}
-.logo-footer p{
-font-size: 20px;
-line-height: calc(39/20);
-color: black;
-}
-
-footer{
-    background-color: #fff;
-}
-footer p{
-    text-align: center;
-    font-size: 16px;
-    color: #000;
-    padding-bottom: 80px;
-}
-
-.totop{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: block;
-    width: 125px;
+.slick-dots li button:before {
+    color: #fff;
 }
