@@ -7,9 +7,13 @@
     <title>デザインカフェ</title>
 
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +24,6 @@
                     <img src="./images/design_cafe_logo_header@2x.png" alt="design cafe">
                 </a>
             </h1>
-
             <nav class="header__nav">
                 <ul>
                     <li><a href="#aboutus">ABOUT US</a></li>
@@ -34,6 +37,7 @@
         <div class="hamburger">
             <span></span>
         </div>
+        <!-- SP -->
         <nav class="header__nav-sp">
             <ul>
                 <li><a href="#aboutus">ABOUT US</a></li>
@@ -47,8 +51,12 @@
 
     <div class="slider">
         <picture>
-            <source srcset=".images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+            <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
             <img src="./images/pc_first-100.jpg" alt="カフェ店内の様子">
+        </picture>
+        <picture>
+            <source srcset="./images/sp_main_vs_2@2x-100.jpg" media="(max-width:767px)">
+            <img src="./images/slider_2.jpg" alt="カフェ店内の様子">
         </picture>
     </div>
 
@@ -59,8 +67,10 @@
             1杯のコーヒーから。
         </h2>
         <p class="text">
-            毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>
-            足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。
+            毎日を丁寧に大切に過ごしたい。<br class="sp_br">
+            だからこそ一杯一杯丁寧にコーヒーを入れ<br>
+            足を運んでくれるお客さんには落ち着く空間と<br class="sp_br">
+            こだわりのコーヒーを提供したい。
         </p>
     </section>
 
@@ -83,6 +93,26 @@
             </p>
         </div>
     </section>
+    <!-- SP -->
+    <section class="about-sp wrapper">
+        <div class="content">
+            <h3>
+                <img src="./images/about_us@2x.png" alt="ABOUT US">
+            </h3>
+            <img class="image" src="./images/about_us@2x-100.jpg" alt="コーヒー乾杯">
+            <p class="about_subttl">
+                私たちが提供する<br>
+                こだわりのコーヒー
+            </p>
+            <p class="text">
+                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+            </p>
+        </div>
+    </section>
 
     <section class="menu wrapper">
         <h3>
@@ -90,21 +120,30 @@
         </h3>
         <ul>
             <li>
-                <img src="./images/pc_menu_drink-100.jpg" alt="アイスカフェオレ">
+                <picture>
+                    <source srcset="./images/drink_sp@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_menu_drink-100.jpg" alt="アイスカフェオレ">
+                </picture>
                 <h4>Drink</h4>
                 <p>
                     ドリンクメニューの概要を100文字程度で紹 介します。素材やこだわりなどをアピールしていきます。
                 </p>
             </li>
             <li>
-                <img src="./images/pc_menu_food-100.jpg" alt="パスタ">
+                <picture>
+                    <source srcset="./images/food_sp@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_menu_food-100.jpg" alt="パスタ">
+                </picture>
                 <h4>Food</h4>
                 <p>
                     フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                 </p>
             </li>
             <li>
-                <img src="./images/pc_menu_sweets-100.jpg" alt="ケーキ">
+                <picture>
+                    <source srcset="./images/cake_sp@2x-100.jpg" media="(max-width:767px)">
+                    <img src="./images/pc_menu_sweets-100.jpg" alt="ケーキ">
+                </picture>
                 <h4>Sweets</h4>
                 <p>
                     スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
@@ -123,6 +162,7 @@
             <li><img src="./images/pc_gallary_03-100.jpg" alt="店内"></li>
             <li><img src="./images/pc_gallary_02-100.jpg" alt="ライト"></li>
             <li><img src="./images/pc_gallary_01-100.jpg" alt="ラテアート"></li>
+            <li><img src="./images/pc_gallary_03-100.jpg" alt="店内"></li>
         </ul>
     </section>
 
@@ -130,21 +170,21 @@
         <h3>
             <img src="./images/event@2x.png" alt="EVENT">
         </h3>
-        <div>
-            <ul>
+        <div class="pc">
+            <ul class="event_list">
                 <li>
                     <p>2020.06.23</p>
-                    <p><a href="">7月はイベント出店のため0/0お休みします</a></p>
+                    <p class="event_text"><a href="">7月はイベント出店のため0/0お休みします</a></p>
                 </li>
 
                 <li>
                     <p>2020.03.15</p>
-                    <p><a href="">春の新商品新発売。話題のあのブランドとコラボ</a></p>
+                    <p class="event_text"><a href="">春の新商品新発売。話題のあのブランドとコラボ</a></p>
                 </li>
 
                 <li>
                     <p>2020.02.06</p>
-                    <p><a href="">コーヒーの日で30%OFFイベントを開催[3日間限定]</a></p>
+                    <p class="event_text"><a href="">コーヒーの日で30%OFFイベントを開催[3日間限定]</a></p>
                 </li>
             </ul>
         </div>
@@ -180,6 +220,29 @@
             $(".hamburger").on("click", function () {
                 $(".hamburger").toggleClass("open");
                 $(".header__nav-sp").fadeToggle();
+            });
+
+            $(".slider").slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                dots: true
+            });
+
+            $(".gallery ul").slick({
+                arrows: false,
+                autoplay: true,
+                adaptiveHeight: true,
+                dots: false,
+                slidesToShow: 5,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
             });
         });
     </script>
